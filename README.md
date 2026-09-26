@@ -1,32 +1,83 @@
 # Online Machine Learning for Real-Time Credit Card Fraud Detection
 
-## 1. Giới thiệu đề tài
+> A research project on applying online machine learning to continuous transaction data for real-time credit card fraud detection.
 
-Đề tài của nhóm tập trung vào việc nghiên cứu **Online Machine Learning trên dữ liệu dòng (Streaming Data)** cho bài toán **phát hiện gian lận thẻ tín dụng trong thời gian thực**.
+---
 
-Khác với cách học máy truyền thống, trong đó mô hình thường được huấn luyện trên một tập dữ liệu có sẵn, Online Machine Learning cho phép mô hình tiếp nhận và học từ dữ liệu mới liên tục.
+## 1. Project Overview
 
-## 2. Vấn đề nghiên cứu
+This project focuses on studying and developing an **Online Machine Learning** approach for **real-time credit card fraud detection**.
 
-Trong bài toán phát hiện gian lận thẻ tín dụng, dữ liệu giao dịch có thể phát sinh liên tục theo thời gian. Đặc điểm của dữ liệu và hành vi gian lận cũng có thể thay đổi theo thời gian, dẫn đến hiện tượng **Concept Drift**.
+Unlike traditional batch learning, where a model is trained on a fixed dataset and periodically retrained, online machine learning allows a model to process new observations incrementally and update its knowledge as new data becomes available.
 
-Vì vậy, mô hình cần có khả năng cập nhật và thích nghi khi dữ liệu mới xuất hiện.
+The project explores how online machine learning can be applied to a fraud detection problem where transaction data arrives continuously over time.
 
-## 3. Công cụ và tài liệu
+---
 
-Nhóm sử dụng Python và thư viện **River** để nghiên cứu và triển khai các thuật toán Online Machine Learning.
+## 2. Research Problem
 
-Nguồn tham khảo chính:
+Credit card transactions are continuously generated in real-world payment systems. This creates a need for machine learning models that can process new transactions incrementally rather than relying entirely on periodic retraining.
 
-- River: https://riverml.xyz/latest/
+Another important challenge is **Concept Drift**, where the underlying patterns in data may change over time. In fraud detection, fraudulent behavior can evolve, meaning that patterns learned from historical data may not always remain effective.
 
-## 4. Các hướng thuật toán đang nghiên cứu
+This project therefore studies how online machine learning can be used to process continuously arriving transaction data and adapt to changes over time.
 
-Nhóm đang tìm hiểu một số thuật toán có khả năng xử lý dữ liệu dòng:
+---
 
-- Adaptive Random Forest (ARF)
-- Hoeffding Tree / Very Fast Decision Tree (VFDT)
-- Online Isolation Forest / Half-Space Trees
-- Stochastic Gradient Descent (SGD) kết hợp Logistic Regression
+## 3. Project Objectives
+
+The main objectives of this project are to:
+
+- Understand the principles of Online Machine Learning.
+- Study how streaming data can be processed incrementally.
+- Investigate the role of Concept Drift in fraud detection.
+- Explore suitable online learning algorithms.
+- Develop an approach for real-time credit card fraud detection.
+- Evaluate the performance of the selected approach.
+
+---
+
+## 4. Research Scope
+
+The project focuses on:
+
+- Online Machine Learning
+- Streaming Data
+- Credit Card Fraud Detection
+- Incremental Learning
+- Concept Drift
+- Real-time prediction
+- Online classification
 
 
+---
+
+## 5. Technologies
+
+The main technologies currently being explored include:
+
+- **Python** — primary programming language
+- **River** — online machine learning framework
+- **GitHub** — research notes, source code, and collaboration
+
+---
+
+## 6. Research Direction
+
+The research process includes the following stages:
+
+1. Study the fundamentals of Online Machine Learning.
+2. Understand streaming data and incremental learning.
+3. Study Concept Drift and its relevance to fraud detection.
+4. Review existing research and implementations.
+5. Investigate candidate online learning algorithms.
+6. Select an appropriate approach for the project.
+7. Implement and evaluate the selected approach.
+
+---
+
+## 7. References
+
+- River — Online Machine Learning for Python  
+  https://riverml.xyz/
+- Optimizer: https://viblo.asia/p/optimizer-hieu-sau-ve-cac-thuat-toan-toi-uu-gdsgdadam-Qbq5QQ9E5D8
